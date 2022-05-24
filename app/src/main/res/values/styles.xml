@@ -1,0 +1,204 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/icon_red</item>
+        <item name="colorAccent">@color/icon_red</item>
+    </style>
+
+    <!--LOGIN ACTIVITY-->
+
+
+    <!--Styles for the Horizontal Views of the Login Activity-->
+    <style name="LoginActHorizontalCommon">
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+
+    <!--Styles for the Edit Texts of the Login Activity-->
+    <style name="LoginActEditText" parent="LoginActHorizontalCommon"></style>
+
+    <!--Styles for the Buttons of the Login Activity-->
+    <style name="LoginActButton" parent="LoginActHorizontalCommon">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/modern_blue_light</item>
+    </style>
+
+
+    <!--Styles for the first horizontal guides of the Login Activity-->
+    <style name="LoginActHorGuid1" parent="LoginActHorizontalCommon">
+        <item name="android:orientation">horizontal</item>
+        <item name="layout_constraintGuide_percent">0.35</item>
+    </style>
+
+    <!--Styles for the last horizontal guides of the Login Activity-->
+    <style name="LoginActHorGuid2" parent="LoginActHorizontalCommon">
+        <item name="android:orientation">horizontal</item>
+        <item name="layout_constraintGuide_percent">0.85</item>
+    </style>
+
+    <!--Styles for text views of the Login Activity-->
+    <style name="LoginActText" parent="LoginActHorizontalCommon">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="Theme.AppCompat.Light.NoActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="Theme.AppCompat.Light.NoActionBar" />
+
+    <!-- Text Styles -->
+    <style name="DefaultTextStyle">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+
+    <!-- Normal -->
+    <style name="Huge" parent="DefaultTextStyle">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Large" parent="DefaultTextStyle">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Medium" parent="DefaultTextStyle">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Small" parent="DefaultTextStyle">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Tiny" parent="DefaultTextStyle">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Micro" parent="DefaultTextStyle">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <!-- Normal X2 -->
+    <style name="HugeX2" parent="DefaultTextStyle">
+        <item name="android:textSize">40sp</item>
+    </style>
+
+    <style name="LargeX2" parent="DefaultTextStyle">
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="MediumX2" parent="DefaultTextStyle">
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="SmallX2" parent="DefaultTextStyle">
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="TinyX2" parent="DefaultTextStyle">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+
+    <!-- Bold -->
+    <style name="BoldHuge" parent="Huge">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BoldLarge" parent="Large">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BoldMedium" parent="Medium">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BoldSmall" parent="Small">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BoldTiny" parent="Tiny">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BoldMicro" parent="Micro">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Bold X2 -->
+    <style name="BoldHugeX2" parent="HugeX2">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BoldLargeX2" parent="LargeX2">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BoldMediumX2" parent="MediumX2">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BoldSmallX2" parent="SmallX2">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BoldTinyX2" parent="TinyX2">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <!-- Italic -->
+    <style name="ItalicHuge" parent="Huge">
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="ItalicLarge" parent="Large">
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="ItalicMedium" parent="Medium">
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="ItalicSmall" parent="Small">
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="ItalicTiny" parent="Tiny">
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="ItalicMicro" parent="Micro">
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <!-- Italic X2 -->
+    <style name="ItalicHugeX2" parent="HugeX2">
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="ItalicLargeX2" parent="LargeX2">
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="ItalicMediumX2" parent="MediumX2">
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="ItalicSmallX2" parent="SmallX2">
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="ItalicTinyX2" parent="TinyX2">
+        <item name="android:textStyle">italic</item>
+    </style>
+</resources>

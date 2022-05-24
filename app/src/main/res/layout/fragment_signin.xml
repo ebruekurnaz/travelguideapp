@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pages.auth.AuthActivity">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="4dp"
+        app:layout_constraintBottom_toTopOf="@id/frag_sigin_gl_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:src="@drawable/travel" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:paddingTop="12dp"
+            android:fontFamily="@font/start2d"
+            android:text="@string/app_name"
+            android:textColor="@color/icon_green"
+            android:textSize="32sp" />
+
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/frag_signin_tf_username"
+        style="@style/LoginActEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_sigin_gl_top"
+        app:layout_constraintWidth_percent="0.9">
+
+        <EditText
+            android:id="@+id/frag_signin_et_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/username"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/frag_signin_tf_password"
+        style="@style/LoginActEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_signin_tf_username"
+        app:layout_constraintWidth_percent="0.9">
+
+        <EditText
+            android:id="@+id/frag_signin_et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/frag_signin_tv_signup"
+        style="@style/LoginActText"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="@string/signup_underlined"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_signin_tf_password" />
+
+    <TextView
+        android:id="@+id/frag_signin_tv_forgetPass"
+        style="@style/LoginActText"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="@string/forget_my_pass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_signin_tv_signup" />
+
+    <Button
+        android:id="@+id/frag_signin_bt_login"
+        style="@style/LoginActButton"
+        android:background="@drawable/signin_button_background"
+        android:text="@string/signin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/frag_sigin_gl_bottom"></Button>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/frag_sigin_gl_top"
+        style="@style/LoginActHorGuid1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/frag_sigin_gl_bottom"
+        style="@style/LoginActHorGuid2" />
+
+    <com.tuyenmonkey.mkloader.MKLoader
+        android:id="@+id/frag_signin_loader"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:mk_color="@color/icon_green"
+        app:mk_type="Whirlpool" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

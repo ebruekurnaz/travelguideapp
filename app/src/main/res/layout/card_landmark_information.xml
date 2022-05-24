@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/card_landmarkInfo_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/BoldHuge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Brandenburg Kapısı"/>
+
+    <TextView
+        android:id="@+id/card_landmarkInfo_tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Berlin/Almanya"
+        style="@style/Small"
+        android:textColor="@color/grey_600"
+        app:layout_constraintStart_toStartOf="@id/card_landmarkInfo_tv_name"
+        app:layout_constraintTop_toBottomOf="@id/card_landmarkInfo_tv_name"/>
+
+
+    <TextView
+        android:id="@+id/card_landmarkInfo_tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_landmarkInfo_tv_location"
+        android:layout_margin="24dp"
+        android:paddingStart="24dp"
+        style="@style/Small"
+        android:paddingEnd="24dp"
+        android:text="@string/lorem_ipsum"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Traveldex</string>
+    <string name="email">E-Mail</string>
+    <string name="username">Kullanıcı Adı</string>
+    <string name="password">Parola</string>
+    <string name="secret_question">Gizlilik Sorusu</string>
+    <string name="signup">Kayıt Ol</string>
+    <string name="signup_underlined"> <u>Kayıt Ol </u> </string>
+    <string name="signin">Giriş Yap</string>
+    <string name="new_password">Yeni Parola</string>
+    <string name="repeat_password">Parola Tekrar</string>
+    <string name="update_password">Parolamı Güncelle</string>
+    <string name="forget_my_pass"><u>Şifremi Unuttum</u></string>
+    <string name="age">Yaş</string>
+    <string name="update">Güncelle</string>
+    <string name="okay">Tamam</string>
+    <string name="cancel">İptal</string>
+    <string name="edit">Düzenle</string>
+
+    <string name="header_attention">Dikkat</string>
+    <string name="header_error">Hata Oluştu</string>
+    <string name="message_logout">Kullanıcıdan Çıkış Yapılacak</string>
+    <string name="message_secret">Gizlilik Sorusu ve Cevabı Eksik</string>
+    <string name="message_change_pass_info">Şifreniz Değişti. Giriş Yapabilirsiniz.</string>
+    <string name="message_not_matched_pass">Şifre ve tekrarı eşleşmiyor.</string>
+    <string name="message_delete_user">Kullanıcınız silinecek</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_camera">CameraActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="action_search">Search Action</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis felis pharetra odio commodo pulvinar. Proin consequat maximus dictum. Morbi eget varius turpis. Nulla eu lacus vulputate, placerat neque ac, elementum dui. Sed euismod velit vel sodales varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec lacinia elementum sagittis.
+
+Nulla at velit elit. Phasellus sed lectus lectus. In hac habitasse platea dictumst. Nulla euismod dolor a ex lacinia, et egestas lacus rhoncus. Nunc a sapien tortor. Curabitur auctor lobortis bibendum. Suspendisse placerat quam a lacus tempor, sed aliquam dolor luctus.</string>
+
+    <string name="realname">Ad-Soyad</string>
+</resources>

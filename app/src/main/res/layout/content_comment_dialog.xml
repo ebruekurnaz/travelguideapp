@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.softwareproject.travelguideapp.ui.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white">
+
+	<androidx.constraintlayout.widget.Guideline
+		android:id="@+id/gl_top"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		app:layout_constraintGuide_percent="0.15" />
+
+	<androidx.constraintlayout.widget.Guideline
+		android:id="@+id/gl_bottom"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		app:layout_constraintGuide_percent="0.85" />
+
+	<androidx.constraintlayout.widget.Guideline
+		android:id="@+id/gl_middle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		app:layout_constraintGuide_percent="0.5" />
+
+	<TextView
+		android:id="@+id/con_commentDialog_tv_title"
+		style="@style/Small"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:background="@color/icon_green"
+		android:gravity="center"
+		android:text="Düşünceni Paylaş"
+		android:textColor="@color/white"
+		android:textSize="16sp"
+		app:layout_constraintBottom_toBottomOf="@id/gl_top"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<TextView
+		android:id="@+id/con_commentDialog_tv_comment"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Yorumun:"
+		style="@style/Small"
+		android:layout_marginTop="32dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/gl_top" />
+
+	<com.google.android.material.textfield.TextInputLayout
+		android:id="@+id/con_commentDialog_til_comment"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:scrollbars="vertical"
+		android:textColorHint="@color/white"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/con_commentDialog_tv_comment"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintWidth_percent="0.8">
+
+		<EditText
+			android:id="@+id/con_commentDialog_et_comment"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:backgroundTint="@color/grey_500"
+			android:inputType="textMultiLine"
+			android:maxLines="3"
+			android:scrollbars="vertical"
+			android:textColor="@color/grey_700" />
+	</com.google.android.material.textfield.TextInputLayout>
+
+	<TextView
+		android:id="@+id/con_commentDialog_tv_score"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Buraya Puanın:"
+		style="@style/Small"
+		android:layout_marginTop="16dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/con_commentDialog_til_comment"/>
+
+	<androidx.appcompat.widget.AppCompatRatingBar
+		android:id="@+id/con_commentDialog_ratingbar"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="4dp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/con_commentDialog_tv_score"
+		android:saveEnabled="true"
+		android:numStars="5"/>
+
+	<View
+		android:id="@+id/view"
+		android:layout_width="0dp"
+		android:layout_height="0.8dp"
+		android:background="@color/grey_400"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/gl_bottom" />
+
+
+	<Button
+		android:id="@+id/con_commentDialog_btn_cancel"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:layout_marginEnd="1dp"
+		android:background="@drawable/basic_ripple_effect"
+		android:gravity="center"
+		android:text="Vazgeç"
+		style="@style/Medium"
+		android:textColor="@color/grey_500"
+		android:textSize="14sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toStartOf="@id/gl_middle"
+		app:layout_constraintHorizontal_weight="1"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/view" />
+
+	<Button
+		android:id="@+id/con_commentDialog_btn_share"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:background="@drawable/basic_ripple_effect"
+		android:gravity="center"
+		android:text="Paylaş"
+		style="@style/Medium"
+		android:layout_marginStart="1dp"
+		android:textColor="@color/icon_red"
+		android:textSize="14sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toEndOf="@id/gl_middle"
+		app:layout_constraintTop_toBottomOf="@id/view" />
+
+
+</com.softwareproject.travelguideapp.ui.SquareLayout>
